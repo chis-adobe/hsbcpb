@@ -1,4 +1,4 @@
-.multilingual-cards > ul {
+.multilingualcard > ul {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -7,45 +7,45 @@
   grid-gap: 16px;
 }
 
-.multilingual-cards > ul > li {
+.multilingualcard > ul > li {
   border: 1px solid var(--dark-color);
   background-color: var(--background-color);
   border: 1px inset rgba(0, 0, 0, 0.2);
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 }
 
-.multilingual-cards .cards-card-body {
+.multilingualcard .cards-card-body {
 	padding: 24px 12px 18px;
 }
 
-.multilingual-cards .cards-card-image {
+.multilingualcard .cards-card-image {
   line-height: 0;
 }
 
-.multilingual-cards .cards-card-body > *:first-child {
+.multilingualcard .cards-card-body > *:first-child {
   margin-top: 0;
 }
 
-.multilingual-cards > ul > li img {
+.multilingualcard > ul > li img {
   width: 100%;
   aspect-ratio: 4 / 3;
   object-fit: cover;
 }
 
 
-.multilingual-cards .cards-card-body h5 {
+.multilingualcard .cards-card-body h5 {
 	line-height: 1.2;
 	font-size: 21px;
 }
 
-.multilingual-cards .cards-card-body p.button-container a {
+.multilingualcard .cards-card-body p.button-container a {
 	line-height: 1.5;
 	font-size: 15px;
 	font-family: 'the-sans-bold';
 	overflow: visible;
 }
 
-.multilingual-cards .cards-card-body p {
+.multilingualcard .cards-card-body p {
 	line-height: 1.5;
 	font-size: 15px;
 	font-family: Arial;
@@ -155,12 +155,12 @@ main .section.full-width.cards-container .cards-wrapper {
 	max-width: unset;
 }
 
-main .section.full-width.cards-container .multilingual-cards > ul {
+main .section.full-width.cards-container .multilingualcard > ul {
 	grid-template-columns: repeat(4, 1fr);
 	grid-gap: 30px;
 }
 
-main .section.full-width.cards-container .multilingual-cards > ul > li {
+main .section.full-width.cards-container .multilingualcard > ul > li {
 	min-width: calc(25% - 15px);
 }
 
@@ -169,21 +169,21 @@ main .section.full-width.cards-container .multilingual-cards > ul > li {
 		padding-right: 0;
 	}
 
-	main .section.full-width.cards-container .multilingual-cards {
+	main .section.full-width.cards-container .multilingualcard {
 		overflow: hidden;
 	}
 
-	main .section.full-width.cards-container .multilingual-cards > ul {
+	main .section.full-width.cards-container .multilingualcard > ul {
 		overflow-x: scroll;
 		scroll-snap-type: x mandatory;
 	}
 
-	main .section.full-width.cards-container .multilingual-cards > ul > li {
+	main .section.full-width.cards-container .multilingualcard > ul > li {
 		scroll-snap-align: start;
 		min-width: 289px;
 	}
 
-	main .section.full-width.cards-container .multilingual-cards > ul > li:last-of-type {
+	main .section.full-width.cards-container .multilingualcard > ul > li:last-of-type {
 		margin-right: 16px;
 	}
 }
