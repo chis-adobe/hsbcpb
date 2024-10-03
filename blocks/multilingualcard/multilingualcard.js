@@ -2,19 +2,23 @@ import { createOptimizedPicture } from "../../scripts/aem.js";
 
 export default function decorate(block) {
   const ul = document.createElement("ul");
-	
+	const languages = {};
+
   [...block.children].forEach((row) => {
+		//languages[row.firstElementChild.innerHTML] = 
     const li = document.createElement("li");
     const anchor = document.createElement("a");
     anchor.href = "";
     const isLink = row.querySelector("div > a");
 
-    while (row.firstElementChild) {
+		const secondElementChild = row.children[1];
+
+    while (secondElementChild) {
       if (isLink) {
-        li.append(row.firstElementChild);
+        li.append(secondElementChild);
         anchor.append(li);
       } else {
-        li.append(row.firstElementChild);
+        li.append(secondElementChild);
       }
     }
 
