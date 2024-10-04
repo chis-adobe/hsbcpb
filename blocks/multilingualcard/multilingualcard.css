@@ -15,7 +15,7 @@
 }
 
 .multilingualcard .cards-card-body {
-	padding: 24px 12px 18px;
+  padding: 24px 12px 18px;
 }
 
 .multilingualcard .cards-card-image {
@@ -32,158 +32,164 @@
   object-fit: cover;
 }
 
-
 .multilingualcard .cards-card-body h5 {
-	line-height: 1.2;
-	font-size: 21px;
+  line-height: 1.2;
+  font-size: 21px;
 }
 
 .multilingualcard .cards-card-body p.button-container a {
-	line-height: 1.5;
-	font-size: 15px;
-	font-family: 'the-sans-bold';
-	overflow: visible;
+  line-height: 1.5;
+  font-size: 15px;
+  font-family: "the-sans-bold";
+  overflow: visible;
 }
 
 .multilingualcard .cards-card-body p {
-	line-height: 1.5;
-	font-size: 15px;
-	font-family: Arial;
-	overflow: visible;
+  line-height: 1.5;
+  font-size: 15px;
+  font-family: Arial;
+  overflow: visible;
 }
-
 
 /* styles: single card */
 main .section.no-spacing {
-	padding: 0 32px;
+  padding: 0 32px;
 }
 
-.cards.single-card {
-	max-width: 970px;
-	margin: 0 auto;
+.multilingualcard.single-card {
+  max-width: 970px;
+  margin: 0 auto;
 }
 
-.cards.single-card > ul {
-	list-style: none;
-	margin: 0;
-	padding: 0;
-	width: 100%;
-    height: 100%;
-	display: block;
-    box-shadow: 0 0 0 1px #ddd, 0 2px 4px #eee;
-  }
+.multilingualcard.single-card > ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  box-shadow: 0 0 0 1px #ddd, 0 2px 4px #eee;
+}
 
-  .cards.single-card > ul > a {
-	display: block;
-	width: 100%;
-	height: auto;
-  }
+.multilingualcard.single-card > ul > a {
+  display: block;
+  width: 100%;
+  height: auto;
+}
 
-  .cards.single-card > ul > a:hover {
-	text-decoration: none;
-  }
+.multilingualcard.single-card > ul > a:hover {
+  text-decoration: none;
+}
 
-  .cards.single-card a:hover li {
-	background: #f9f9f9;
-	transition: background 200ms, color 200ms, opacity 200ms;
-	box-shadow: 0 0 0 1px #ddd, 0 1px 10px #ccc;
-  }
-  
-  .cards.single-card > ul > a > li {
-	display: flex;
-	justify-content: flex-start;
-	align-items: center;
-	height: 100%;
-  }
-    
-  .cards.single-card .cards-card-image {
-	min-width: 282px;
-	max-width: 282px;
-	height: 100%;
-  }
-
-  .cards.single-card .cards-card-image picture {
-	box-sizing: border-box;
-  }
-    
-  .cards.single-card .cards-card-image picture img {
-	max-width: 282px;
-	height: auto;
-	object-fit: cover;
-	display: block;
-  }
-  
-  @media (width <= 767px) {	
-	.cards.single-card .cards-card-image {
-		min-width: unset;
-		max-width: unset;
-		width: 350px;
-		overflow: hidden;
-	}
-
-	.cards.single-card .cards-card-image img {
-		max-width: unset;
-		height: 100%;
-	}
-  }
-
-  .cards.single-card .cards-card-body {
-	padding: 10px 20px !important;
-  }
-
-  .cards.single-card .cards-card-body h3 {
-	  line-height: 1.2;
-	  font-size: 21px;
-	  color: var(--corning-blue);
-  }
-  
-  .cards.single-card .cards-card-body > p {
-	color: var(--text-color);
-  }
-
-  .cards.single-card .cards-hide-markdown {
+.multilingualcard.single-card > ul > a {
 	display: none;
-	visibility: hidden;
-  }
-
-/* cards full-width */
-main .section.full-width.cards-container {
-	padding: 48px 16px;
 }
 
-main .section.full-width.cards-container .cards-wrapper {
-	max-width: unset;
+.multilingualcard.single-card > ul > a:first-of-type {
+	display: block;
 }
 
-main .section.full-width.cards-container .multilingualcard > ul {
-	grid-template-columns: repeat(4, 1fr);
-	grid-gap: 30px;
+.multilingualcard.single-card a:hover li {
+  background: #f9f9f9;
+  transition: background 200ms, color 200ms, opacity 200ms;
+  box-shadow: 0 0 0 1px #ddd, 0 1px 10px #ccc;
 }
 
-main .section.full-width.cards-container .multilingualcard > ul > li {
-	min-width: calc(25% - 15px);
+.multilingualcard.single-card > ul > a > li {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100%;
+}
+
+.multilingualcard.single-card .cards-card-image {
+  min-width: 282px;
+  max-width: 282px;
+  height: 100%;
+}
+
+.multilingualcard.single-card .cards-card-image picture {
+  box-sizing: border-box;
+}
+
+.multilingualcard.single-card .cards-card-image picture img {
+  max-width: 282px;
+  height: auto;
+  object-fit: cover;
+  display: block;
 }
 
 @media (width <= 767px) {
-	main .section.full-width.cards-container {
-		padding-right: 0;
-	}
+  .multilingualcard.single-card .cards-card-image {
+    min-width: unset;
+    max-width: unset;
+    width: 350px;
+    overflow: hidden;
+  }
 
-	main .section.full-width.cards-container .multilingualcard {
-		overflow: hidden;
-	}
+  .multilingualcard.single-card .cards-card-image img {
+    max-width: unset;
+    height: 100%;
+  }
+}
 
-	main .section.full-width.cards-container .multilingualcard > ul {
-		overflow-x: scroll;
-		scroll-snap-type: x mandatory;
-	}
+.multilingualcard.single-card .cards-card-body {
+  padding: 10px 20px !important;
+}
 
-	main .section.full-width.cards-container .multilingualcard > ul > li {
-		scroll-snap-align: start;
-		min-width: 289px;
-	}
+.multilingualcard.single-card .cards-card-body h3 {
+  line-height: 1.2;
+  font-size: 21px;
+  color: var(--corning-blue);
+}
 
-	main .section.full-width.cards-container .multilingualcard > ul > li:last-of-type {
-		margin-right: 16px;
-	}
+.multilingualcard.single-card .cards-card-body > p {
+  color: var(--text-color);
+}
+
+.multilingualcard.single-card .cards-hide-markdown {
+  display: none;
+  visibility: hidden;
+}
+
+/* cards full-width */
+main .multilingualcard-wrapper {
+  padding: 48px 16px;
+}
+
+main .multilingualcard-wrapper .cards-wrapper {
+  max-width: unset;
+}
+
+main .multilingualcard-wrapper .multilingualcard > ul {
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 30px;
+}
+
+main .multilingualcard-wrapper .multilingualcard > ul > li {
+  min-width: calc(25% - 15px);
+}
+
+@media (width <= 767px) {
+  main .multilingualcard-wrapper {
+    padding-right: 0;
+  }
+
+  main .multilingualcard-wrapper .multilingualcard {
+    overflow: hidden;
+  }
+
+  main .multilingualcard-wrapper .multilingualcard > ul {
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+  }
+
+  main .multilingualcard-wrapper .multilingualcard > ul > li {
+    scroll-snap-align: start;
+    min-width: 289px;
+  }
+
+  main .multilingualcard-wrapper .multilingualcard > ul > li:last-of-type {
+    margin-right: 16px;
+  }
 }
